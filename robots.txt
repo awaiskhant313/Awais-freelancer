@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://awais-store.netlify.app/sitemap.xml

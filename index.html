@@ -1,0 +1,2101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Awais Web | Web Developer, MS Excel & MS Office Services</title>
+
+  <meta
+    name="description"
+    content="Awais Web is the professional profile of Awais Khan, offering web development, website design, MS Excel and MS Office digital services from Pakistan."
+  >
+
+  <meta
+    name="keywords"
+    content="Awais Web, Awais Khan, web developer Pakistan, web development, website design, HTML CSS JavaScript, MS Excel, Microsoft Excel, MS Office, freelance web developer Pakistan"
+  >
+
+  <meta name="author" content="Awais Khan">
+
+  <meta
+    name="robots"
+    content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+  >
+
+  <meta name="theme-color" content="#090909">
+
+  <!--
+    IMPORTANT:
+    After you know your NEW Awais Web domain,
+    add your canonical URL here.
+  -->
+
+  <!-- Open Graph -->
+  <meta
+    property="og:title"
+    content="Awais Web | Web Developer & Digital Services"
+  >
+
+  <meta
+    property="og:description"
+    content="Professional web development, MS Excel and MS Office services by Awais Khan."
+  >
+
+  <meta property="og:type" content="website">
+
+  <meta
+    property="og:image"
+    content="awais.jpg"
+  >
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+
+  <meta
+    name="twitter:title"
+    content="Awais Web | Web Developer & Digital Services"
+  >
+
+  <meta
+    name="twitter:description"
+    content="Web development, MS Excel and MS Office services by Awais Khan."
+  >
+
+  <meta
+    name="twitter:image"
+    content="awais.jpg"
+  >
+
+  <!-- Google Font -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Awais Khan",
+    "jobTitle": "Web Developer",
+    "email": "mailto:awaiskhan10804@gmail.com",
+    "knowsAbout": [
+      "Web Development",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Microsoft Excel",
+      "Microsoft Office"
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Awais Web"
+  }
+  </script>
+
+  <style>
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Inter", sans-serif;
+      background: #090909;
+      color: #f5f5f5;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    section {
+      scroll-margin-top: 90px;
+    }
+
+    .container {
+      width: min(1120px, 92%);
+      margin: auto;
+    }
+
+
+    /* =========================
+       NAVBAR
+    ========================= */
+
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+
+      background: rgba(9, 9, 9, 0.88);
+      backdrop-filter: blur(18px);
+
+      border-bottom: 1px solid #202020;
+    }
+
+    .nav-inner {
+      height: 72px;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+    }
+
+    .logo span {
+      color: #8b5cf6;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: #b7b7b7;
+      font-size: 14px;
+
+      transition: 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #ffffff;
+    }
+
+    .nav-hire {
+      padding: 10px 17px;
+
+      border-radius: 10px;
+
+      background: #8b5cf6;
+
+      color: white !important;
+
+      font-weight: 700;
+    }
+
+    .menu-btn {
+      display: none;
+
+      background: transparent;
+      border: 0;
+
+      color: white;
+
+      font-size: 27px;
+
+      cursor: pointer;
+    }
+
+
+    /* =========================
+       HERO
+       FIXED: NO MORE HUGE SPACE
+    ========================= */
+
+    .hero {
+      min-height: auto;
+
+      display: flex;
+      align-items: center;
+
+      /*
+        Previously this was 100vh.
+        That created the huge empty desktop space.
+      */
+
+      padding: 125px 0 65px;
+
+      position: relative;
+    }
+
+    .hero::before {
+      content: "";
+
+      position: absolute;
+
+      width: 420px;
+      height: 420px;
+
+      background: rgba(139, 92, 246, 0.12);
+
+      filter: blur(120px);
+
+      top: 80px;
+      right: 5%;
+
+      border-radius: 50%;
+
+      pointer-events: none;
+    }
+
+    .hero-grid {
+      display: grid;
+
+      grid-template-columns: 1.15fr 0.85fr;
+
+      gap: 60px;
+
+      align-items: center;
+    }
+
+    .badge {
+      display: inline-flex;
+
+      align-items: center;
+      gap: 8px;
+
+      padding: 8px 13px;
+
+      border: 1px solid #292929;
+
+      background: #111111;
+
+      border-radius: 999px;
+
+      color: #c7c7c7;
+
+      font-size: 13px;
+
+      margin-bottom: 20px;
+    }
+
+    .badge-dot {
+      width: 8px;
+      height: 8px;
+
+      border-radius: 50%;
+
+      background: #22c55e;
+
+      box-shadow: 0 0 10px #22c55e;
+    }
+
+    .hero h1 {
+      font-size: clamp(42px, 6vw, 72px);
+
+      line-height: 1.02;
+
+      letter-spacing: -3px;
+
+      max-width: 800px;
+
+      margin-bottom: 20px;
+    }
+
+    .hero h1 span {
+      color: #8b5cf6;
+    }
+
+    .hero-text {
+      color: #a7a7a7;
+
+      max-width: 650px;
+
+      font-size: 17px;
+
+      margin-bottom: 28px;
+    }
+
+    .buttons {
+      display: flex;
+
+      gap: 13px;
+
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-flex;
+
+      justify-content: center;
+      align-items: center;
+
+      padding: 13px 20px;
+
+      border-radius: 11px;
+
+      font-weight: 700;
+
+      font-size: 14px;
+
+      border: 1px solid #292929;
+
+      transition: 0.3s;
+
+      cursor: pointer;
+    }
+
+    .btn-primary {
+      background: #8b5cf6;
+
+      color: white;
+
+      border-color: #8b5cf6;
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+
+      background: #7c3aed;
+    }
+
+    .btn-secondary {
+      background: #111111;
+
+      color: white;
+    }
+
+    .btn-secondary:hover {
+      border-color: #8b5cf6;
+
+      transform: translateY(-2px);
+    }
+
+
+    /* PROFILE */
+
+    .profile-card {
+      max-width: 420px;
+      width: 100%;
+
+      margin-left: auto;
+
+      background:
+        linear-gradient(
+          145deg,
+          #151515,
+          #0e0e0e
+        );
+
+      border: 1px solid #292929;
+
+      border-radius: 25px;
+
+      padding: 20px;
+
+      box-shadow:
+        0 25px 70px rgba(0,0,0,0.35);
+    }
+
+    .profile-image {
+      width: 100%;
+
+      aspect-ratio: 1 / 1;
+
+      object-fit: cover;
+
+      border-radius: 20px;
+
+      border: 1px solid #303030;
+    }
+
+    .profile-info {
+      padding: 18px 5px 2px;
+    }
+
+    .profile-info h2 {
+      font-size: 24px;
+
+      margin-bottom: 4px;
+    }
+
+    .profile-info p {
+      color: #999;
+
+      font-size: 14px;
+    }
+
+
+    /* =========================
+       TRUST STRIP
+    ========================= */
+
+    .trust-strip {
+      border-top: 1px solid #202020;
+
+      border-bottom: 1px solid #202020;
+
+      padding: 22px 0;
+
+      background: #0c0c0c;
+    }
+
+    .trust-grid {
+      display: grid;
+
+      grid-template-columns: repeat(3, 1fr);
+
+      text-align: center;
+
+      gap: 20px;
+    }
+
+    .trust-item strong {
+      display: block;
+
+      font-size: 18px;
+
+      margin-bottom: 4px;
+    }
+
+    .trust-item span {
+      color: #858585;
+
+      font-size: 13px;
+    }
+
+
+    /* =========================
+       GENERAL SECTIONS
+    ========================= */
+
+    .section {
+      padding: 85px 0;
+    }
+
+    .section-header {
+      max-width: 680px;
+
+      margin-bottom: 40px;
+    }
+
+    .eyebrow {
+      color: #8b5cf6;
+
+      font-size: 13px;
+
+      font-weight: 800;
+
+      text-transform: uppercase;
+
+      letter-spacing: 1.5px;
+
+      margin-bottom: 10px;
+    }
+
+    .section-title {
+      font-size: clamp(32px, 5vw, 48px);
+
+      line-height: 1.1;
+
+      letter-spacing: -1.8px;
+
+      margin-bottom: 15px;
+    }
+
+    .section-description {
+      color: #909090;
+
+      font-size: 15px;
+    }
+
+
+    /* =========================
+       SERVICES
+    ========================= */
+
+    .services-grid {
+      display: grid;
+
+      grid-template-columns: repeat(3, 1fr);
+
+      gap: 18px;
+    }
+
+    .card {
+      background: #101010;
+
+      border: 1px solid #242424;
+
+      border-radius: 17px;
+
+      padding: 25px;
+
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+
+      border-color: #3a2a59;
+
+      box-shadow:
+        0 15px 40px rgba(0,0,0,0.25);
+    }
+
+    .icon {
+      width: 45px;
+      height: 45px;
+
+      display: grid;
+
+      place-items: center;
+
+      border-radius: 12px;
+
+      background: #191321;
+
+      border: 1px solid #30234a;
+
+      font-size: 20px;
+
+      margin-bottom: 20px;
+    }
+
+    .card h3 {
+      font-size: 18px;
+
+      margin-bottom: 9px;
+    }
+
+    .card p {
+      color: #8f8f8f;
+
+      font-size: 14px;
+
+      margin-bottom: 18px;
+    }
+
+    .price {
+      color: #c4a7ff;
+
+      font-size: 14px;
+
+      font-weight: 800;
+    }
+
+
+    /* =========================
+       SKILLS
+    ========================= */
+
+    .skills-grid {
+      display: grid;
+
+      grid-template-columns: repeat(3, 1fr);
+
+      gap: 18px;
+    }
+
+    .skill-card {
+      padding: 27px;
+
+      background: #101010;
+
+      border: 1px solid #242424;
+
+      border-radius: 17px;
+    }
+
+    .skill-card h3 {
+      margin-bottom: 10px;
+    }
+
+    .skill-card p {
+      color: #909090;
+
+      font-size: 14px;
+    }
+
+    .skill-bar {
+      height: 6px;
+
+      background: #222;
+
+      border-radius: 20px;
+
+      margin-top: 20px;
+
+      overflow: hidden;
+    }
+
+    .skill-fill {
+      height: 100%;
+
+      width: 90%;
+
+      background: #8b5cf6;
+
+      border-radius: 20px;
+    }
+
+    .skill-fill.excel {
+      width: 85%;
+    }
+
+    .skill-fill.office {
+      width: 90%;
+    }
+
+
+    /* =========================
+       PORTFOLIO
+    ========================= */
+
+    .portfolio-grid {
+      display: grid;
+
+      grid-template-columns: repeat(2, 1fr);
+
+      gap: 18px;
+    }
+
+    .project {
+      background: #101010;
+
+      border: 1px solid #242424;
+
+      border-radius: 18px;
+
+      padding: 25px;
+
+      transition: 0.3s;
+    }
+
+    .project:hover {
+      transform: translateY(-4px);
+
+      border-color: #3a2a59;
+    }
+
+    .project-tag {
+      display: inline-block;
+
+      color: #bda5f7;
+
+      background: #191321;
+
+      border: 1px solid #30234a;
+
+      border-radius: 999px;
+
+      padding: 6px 10px;
+
+      font-size: 11px;
+
+      margin-bottom: 16px;
+    }
+
+    .project h3 {
+      margin-bottom: 8px;
+    }
+
+    .project p {
+      color: #8f8f8f;
+
+      font-size: 14px;
+
+      margin-bottom: 18px;
+    }
+
+    .project-link {
+      color: #c4a7ff;
+
+      font-size: 14px;
+
+      font-weight: 700;
+    }
+
+    .project-link:hover {
+      text-decoration: underline;
+    }
+
+
+    /* =========================
+       ABOUT
+    ========================= */
+
+    .about-grid {
+      display: grid;
+
+      grid-template-columns: 1fr 1fr;
+
+      gap: 50px;
+
+      align-items: center;
+    }
+
+    .about-text p {
+      color: #929292;
+
+      margin-bottom: 17px;
+
+      font-size: 15px;
+    }
+
+    .about-list {
+      list-style: none;
+
+      display: grid;
+
+      gap: 12px;
+    }
+
+    .about-list li {
+      padding: 14px 16px;
+
+      background: #101010;
+
+      border: 1px solid #242424;
+
+      border-radius: 12px;
+
+      color: #c9c9c9;
+
+      font-size: 14px;
+    }
+
+
+    /* =========================
+       PROCESS
+    ========================= */
+
+    .process-grid {
+      display: grid;
+
+      grid-template-columns: repeat(4, 1fr);
+
+      gap: 15px;
+    }
+
+    .process-card {
+      background: #101010;
+
+      border: 1px solid #242424;
+
+      border-radius: 16px;
+
+      padding: 22px;
+    }
+
+    .process-number {
+      color: #8b5cf6;
+
+      font-size: 13px;
+
+      font-weight: 800;
+
+      margin-bottom: 15px;
+    }
+
+    .process-card h3 {
+      font-size: 16px;
+
+      margin-bottom: 8px;
+    }
+
+    .process-card p {
+      color: #858585;
+
+      font-size: 13px;
+    }
+
+
+    /* =========================
+       CTA
+    ========================= */
+
+    .cta {
+      padding: 70px 30px;
+
+      border: 1px solid #2a2340;
+
+      background:
+        radial-gradient(
+          circle at top right,
+          rgba(139,92,246,0.16),
+          transparent 45%
+        ),
+        #101010;
+
+      border-radius: 25px;
+
+      text-align: center;
+    }
+
+    .cta h2 {
+      font-size: clamp(30px, 5vw, 46px);
+
+      letter-spacing: -1.5px;
+
+      margin-bottom: 14px;
+    }
+
+    .cta p {
+      color: #909090;
+
+      max-width: 620px;
+
+      margin: auto auto 25px;
+    }
+
+
+    /* =========================
+       CONTACT
+    ========================= */
+
+    .contact-grid {
+      display: grid;
+
+      grid-template-columns: 0.8fr 1.2fr;
+
+      gap: 25px;
+    }
+
+    .contact-info {
+      display: grid;
+
+      gap: 15px;
+    }
+
+    .contact-box {
+      background: #101010;
+
+      border: 1px solid #242424;
+
+      border-radius: 15px;
+
+      padding: 20px;
+    }
+
+    .contact-box span {
+      display: block;
+
+      color: #777;
+
+      font-size: 12px;
+
+      margin-bottom: 5px;
+    }
+
+    .contact-box strong {
+      font-size: 14px;
+
+      word-break: break-word;
+    }
+
+    .contact-actions {
+      display: flex;
+
+      gap: 10px;
+
+      flex-wrap: wrap;
+
+      margin-top: 5px;
+    }
+
+    .whatsapp-btn {
+      background: #16a34a;
+
+      border-color: #16a34a;
+
+      color: white;
+    }
+
+    .whatsapp-btn:hover {
+      background: #15803d;
+
+      transform: translateY(-2px);
+    }
+
+    .contact-form {
+      background: #101010;
+
+      border: 1px solid #242424;
+
+      border-radius: 18px;
+
+      padding: 25px;
+    }
+
+    .form-group {
+      margin-bottom: 16px;
+    }
+
+    .form-group label {
+      display: block;
+
+      font-size: 13px;
+
+      color: #c6c6c6;
+
+      margin-bottom: 7px;
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+      width: 100%;
+
+      padding: 13px 14px;
+
+      background: #0b0b0b;
+
+      border: 1px solid #292929;
+
+      border-radius: 10px;
+
+      color: white;
+
+      font-family: inherit;
+
+      outline: none;
+
+      transition: 0.3s;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus,
+    .form-group select:focus {
+      border-color: #8b5cf6;
+    }
+
+    .form-group textarea {
+      min-height: 130px;
+
+      resize: vertical;
+    }
+
+    .hidden-field {
+      display: none;
+    }
+
+
+    /* =========================
+       FOOTER
+    ========================= */
+
+    footer {
+      border-top: 1px solid #202020;
+
+      padding: 30px 0;
+
+      margin-top: 30px;
+    }
+
+    .footer-inner {
+      display: flex;
+
+      align-items: center;
+
+      justify-content: space-between;
+
+      gap: 20px;
+    }
+
+    footer p {
+      color: #666;
+
+      font-size: 13px;
+    }
+
+    .footer-links {
+      display: flex;
+
+      gap: 17px;
+    }
+
+    .footer-links a {
+      color: #777;
+
+      font-size: 13px;
+    }
+
+    .footer-links a:hover {
+      color: white;
+    }
+
+
+    /* =========================
+       FLOATING WHATSAPP
+    ========================= */
+
+    .whatsapp {
+      position: fixed;
+
+      right: 20px;
+      bottom: 20px;
+
+      width: 58px;
+      height: 58px;
+
+      display: grid;
+
+      place-items: center;
+
+      background: #25D366;
+
+      color: white;
+
+      border-radius: 50%;
+
+      font-size: 28px;
+
+      z-index: 999;
+
+      box-shadow:
+        0 8px 30px rgba(37,211,102,0.3);
+
+      transition: 0.3s;
+    }
+
+    .whatsapp:hover {
+      transform: scale(1.08);
+    }
+
+
+    /* =========================
+       RESPONSIVE
+    ========================= */
+
+    @media (max-width: 900px) {
+
+      .hero-grid,
+      .about-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        padding-top: 110px;
+        padding-bottom: 55px;
+      }
+
+      .profile-card {
+        margin: auto;
+      }
+
+      .services-grid,
+      .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .process-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+
+    @media (max-width: 700px) {
+
+      .nav-links {
+        display: none;
+
+        position: absolute;
+
+        top: 72px;
+        left: 0;
+        right: 0;
+
+        background: #0d0d0d;
+
+        border-bottom: 1px solid #242424;
+
+        padding: 18px 6%;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 18px;
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .menu-btn {
+        display: block;
+      }
+
+      .hero {
+        padding-top: 105px;
+        padding-bottom: 45px;
+      }
+
+      .hero-grid {
+        gap: 35px;
+      }
+
+      .hero h1 {
+        letter-spacing: -2px;
+      }
+
+      .hero-text {
+        font-size: 15px;
+      }
+
+      .services-grid,
+      .skills-grid,
+      .portfolio-grid,
+      .trust-grid,
+      .process-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .section {
+        padding: 70px 0;
+      }
+
+      .footer-inner {
+        flex-direction: column;
+
+        text-align: center;
+      }
+
+      .whatsapp {
+        width: 54px;
+        height: 54px;
+
+        right: 16px;
+        bottom: 16px;
+      }
+    }
+
+  </style>
+</head>
+
+
+<body>
+
+
+  <!-- =========================
+       NAVBAR
+  ========================= -->
+
+  <header class="navbar">
+
+    <div class="container nav-inner">
+
+      <a href="#home" class="logo">
+        Awais<span>Web</span>
+      </a>
+
+      <button
+        class="menu-btn"
+        id="menuBtn"
+        aria-label="Open menu"
+      >
+        ☰
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+
+        <li>
+          <a href="#home">Home</a>
+        </li>
+
+        <li>
+          <a href="#services">Services</a>
+        </li>
+
+        <li>
+          <a href="#skills">Skills</a>
+        </li>
+
+        <li>
+          <a href="#portfolio">Portfolio</a>
+        </li>
+
+        <li>
+          <a href="#about">About</a>
+        </li>
+
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+
+        <li>
+          <a href="#contact" class="nav-hire">
+            Hire Me
+          </a>
+        </li>
+
+      </ul>
+
+    </div>
+
+  </header>
+
+
+  <!-- =========================
+       HERO
+  ========================= -->
+
+  <main id="home">
+
+    <section class="hero">
+
+      <div class="container hero-grid">
+
+        <div>
+
+          <div class="badge">
+            <span class="badge-dot"></span>
+            Available for selected projects
+          </div>
+
+          <h1>
+            Building
+            <span>Digital Solutions</span>
+            That Work.
+          </h1>
+
+          <p class="hero-text">
+            I'm Awais Khan, a web developer and digital services
+            provider focused on creating clean websites, practical
+            Excel solutions and professional MS Office work.
+          </p>
+
+          <div class="buttons">
+
+            <a
+              href="#contact"
+              class="btn btn-primary"
+            >
+              Start a Project
+            </a>
+
+            <a
+              href="#portfolio"
+              class="btn btn-secondary"
+            >
+              View My Work
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <div class="profile-card">
+
+          <img
+            src="awais.jpg"
+            alt="Awais Khan - Web Developer"
+            class="profile-image"
+          >
+
+          <div class="profile-info">
+
+            <h2>Awais Khan</h2>
+
+            <p>
+              Web Developer • MS Excel • MS Office
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         TRUST STRIP
+    ========================= -->
+
+    <section class="trust-strip">
+
+      <div class="container trust-grid">
+
+        <div class="trust-item">
+
+          <strong>Web Development</strong>
+
+          <span>
+            Modern responsive websites
+          </span>
+
+        </div>
+
+        <div class="trust-item">
+
+          <strong>MS Excel</strong>
+
+          <span>
+            Practical spreadsheet solutions
+          </span>
+
+        </div>
+
+        <div class="trust-item">
+
+          <strong>MS Office</strong>
+
+          <span>
+            Professional office work
+          </span>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         SERVICES
+    ========================= -->
+
+    <section class="section" id="services">
+
+      <div class="container">
+
+        <div class="section-header">
+
+          <div class="eyebrow">
+            Services
+          </div>
+
+          <h2 class="section-title">
+            What I Can Help You With
+          </h2>
+
+          <p class="section-description">
+            Practical digital services for websites,
+            business tasks and online projects.
+          </p>
+
+        </div>
+
+
+        <div class="services-grid">
+
+
+          <div class="card">
+
+            <div class="icon">🌐</div>
+
+            <h3>
+              Website Development
+            </h3>
+
+            <p>
+              Modern responsive websites built
+              for personal and business needs.
+            </p>
+
+            <div class="price">
+              Starting from Rs. 5,000+
+            </div>
+
+          </div>
+
+
+          <div class="card">
+
+            <div class="icon">🎨</div>
+
+            <h3>
+              Website Design
+            </h3>
+
+            <p>
+              Clean, modern and professional
+              website interfaces.
+            </p>
+
+            <div class="price">
+              Starting from Rs. 3,500+
+            </div>
+
+          </div>
+
+
+          <div class="card">
+
+            <div class="icon">📊</div>
+
+            <h3>
+              MS Excel Work
+            </h3>
+
+            <p>
+              Spreadsheet formatting, formulas,
+              tables and practical Excel solutions.
+            </p>
+
+            <div class="price">
+              Starting from Rs. 1,500+
+            </div>
+
+          </div>
+
+
+          <div class="card">
+
+            <div class="icon">📄</div>
+
+            <h3>
+              MS Office Work
+            </h3>
+
+            <p>
+              Professional Word, PowerPoint and
+              general office document work.
+            </p>
+
+            <div class="price">
+              Starting from Rs. 1,000+
+            </div>
+
+          </div>
+
+
+          <div class="card">
+
+            <div class="icon">🛠️</div>
+
+            <h3>
+              Website Fixing
+            </h3>
+
+            <p>
+              Fixing layout problems, broken sections,
+              responsive issues and small website bugs.
+            </p>
+
+            <div class="price">
+              Starting from Rs. 1,000+
+            </div>
+
+          </div>
+
+
+          <div class="card">
+
+            <div class="icon">💻</div>
+
+            <h3>
+              Digital Projects
+            </h3>
+
+            <p>
+              Custom digital solutions based on
+              your project requirements.
+            </p>
+
+            <div class="price">
+              Custom Quote
+            </div>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         SKILLS
+    ========================= -->
+
+    <section class="section" id="skills">
+
+      <div class="container">
+
+        <div class="section-header">
+
+          <div class="eyebrow">
+            Skills
+          </div>
+
+          <h2 class="section-title">
+            My Core Skills
+          </h2>
+
+          <p class="section-description">
+            Skills focused on practical digital,
+            office and web development work.
+          </p>
+
+        </div>
+
+
+        <div class="skills-grid">
+
+
+          <div class="skill-card">
+
+            <h3>
+              Web Development
+            </h3>
+
+            <p>
+              HTML, CSS, responsive layouts and
+              modern website development.
+            </p>
+
+            <div class="skill-bar">
+
+              <div class="skill-fill"></div>
+
+            </div>
+
+          </div>
+
+
+          <div class="skill-card">
+
+            <h3>
+              MS Excel
+            </h3>
+
+            <p>
+              Spreadsheet organization, formulas,
+              formatting and practical solutions.
+            </p>
+
+            <div class="skill-bar">
+
+              <div class="skill-fill excel"></div>
+
+            </div>
+
+          </div>
+
+
+          <div class="skill-card">
+
+            <h3>
+              MS Office
+            </h3>
+
+            <p>
+              Microsoft Word, PowerPoint and
+              professional document work.
+            </p>
+
+            <div class="skill-bar">
+
+              <div class="skill-fill office"></div>
+
+            </div>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         PORTFOLIO
+    ========================= -->
+
+    <section class="section" id="portfolio">
+
+      <div class="container">
+
+        <div class="section-header">
+
+          <div class="eyebrow">
+            Portfolio
+          </div>
+
+          <h2 class="section-title">
+            Selected Projects
+          </h2>
+
+          <p class="section-description">
+            Some projects and website concepts
+            I've worked on.
+          </p>
+
+        </div>
+
+
+        <div class="portfolio-grid">
+
+
+          <div class="project">
+
+            <span class="project-tag">
+              Personal Website
+            </span>
+
+            <h3>
+              Awais Web
+            </h3>
+
+            <p>
+              Professional personal profile website
+              showcasing web development and digital services.
+            </p>
+
+            <a
+              href="#home"
+              class="project-link"
+            >
+              View Project →
+            </a>
+
+          </div>
+
+
+          <div class="project">
+
+            <span class="project-tag">
+              E-Commerce Concept
+            </span>
+
+            <h3>
+              Awais Shopping Store
+            </h3>
+
+            <p>
+              A dark modern shopping website concept
+              created for showcasing products.
+            </p>
+
+            <a
+              href="https://awais-store.netlify.app/"
+              class="project-link"
+              rel="noopener"
+            >
+              Visit Website →
+            </a>
+
+          </div>
+
+
+          <div class="project">
+
+            <span class="project-tag">
+              Creative Website
+            </span>
+
+            <h3>
+              Pashto Poetry Website
+            </h3>
+
+            <p>
+              A creative concept for sharing Pashto
+              poetry and short video content.
+            </p>
+
+            <a
+              href="#contact"
+              class="project-link"
+            >
+              Ask About Project →
+            </a>
+
+          </div>
+
+
+          <div class="project">
+
+            <span class="project-tag">
+              Automation
+            </span>
+
+            <h3>
+              WhatsApp Automation Project
+            </h3>
+
+            <p>
+              A web-based automation project concept
+              designed around WhatsApp workflows.
+            </p>
+
+            <a
+              href="#contact"
+              class="project-link"
+            >
+              Ask About Project →
+            </a>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         ABOUT
+    ========================= -->
+
+    <section class="section" id="about">
+
+      <div class="container about-grid">
+
+
+        <div class="about-text">
+
+          <div class="eyebrow">
+            About Me
+          </div>
+
+          <h2 class="section-title">
+            Simple Skills.
+            <br>
+            Practical Solutions.
+          </h2>
+
+          <p>
+            I'm Awais Khan, a learner and web developer
+            focused on creating useful digital solutions.
+          </p>
+
+          <p>
+            My main areas include web development,
+            website design, MS Excel and MS Office work.
+          </p>
+
+          <p>
+            I focus on clean layouts, practical features
+            and solutions that are easy to use.
+          </p>
+
+        </div>
+
+
+        <ul class="about-list">
+
+          <li>
+            ✓ Clean and responsive website layouts
+          </li>
+
+          <li>
+            ✓ Practical Excel solutions
+          </li>
+
+          <li>
+            ✓ Professional MS Office work
+          </li>
+
+          <li>
+            ✓ Mobile-friendly website design
+          </li>
+
+          <li>
+            ✓ Project-focused communication
+          </li>
+
+          <li>
+            ✓ Practical digital solutions
+          </li>
+
+        </ul>
+
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         PROCESS
+    ========================= -->
+
+    <section class="section">
+
+      <div class="container">
+
+        <div class="section-header">
+
+          <div class="eyebrow">
+            Process
+          </div>
+
+          <h2 class="section-title">
+            How It Works
+          </h2>
+
+          <p class="section-description">
+            A simple process from idea to final delivery.
+          </p>
+
+        </div>
+
+
+        <div class="process-grid">
+
+
+          <div class="process-card">
+
+            <div class="process-number">
+              01
+            </div>
+
+            <h3>
+              Tell Me
+            </h3>
+
+            <p>
+              Share your project idea and requirements.
+            </p>
+
+          </div>
+
+
+          <div class="process-card">
+
+            <div class="process-number">
+              02
+            </div>
+
+            <h3>
+              Plan
+            </h3>
+
+            <p>
+              We discuss the structure and required features.
+            </p>
+
+          </div>
+
+
+          <div class="process-card">
+
+            <div class="process-number">
+              03
+            </div>
+
+            <h3>
+              Build
+            </h3>
+
+            <p>
+              The project is developed and refined.
+            </p>
+
+          </div>
+
+
+          <div class="process-card">
+
+            <div class="process-number">
+              04
+            </div>
+
+            <h3>
+              Deliver
+            </h3>
+
+            <p>
+              Final work is reviewed and delivered.
+            </p>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         CTA
+    ========================= -->
+
+    <section class="section">
+
+      <div class="container">
+
+        <div class="cta">
+
+          <h2>
+            Have a Project in Mind?
+          </h2>
+
+          <p>
+            Let's discuss your website, Excel,
+            MS Office or digital project requirements.
+          </p>
+
+          <a
+            href="#contact"
+            class="btn btn-primary"
+          >
+            Let's Work Together
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         CONTACT
+    ========================= -->
+
+    <section class="section" id="contact">
+
+      <div class="container">
+
+        <div class="section-header">
+
+          <div class="eyebrow">
+            Contact
+          </div>
+
+          <h2 class="section-title">
+            Let's Start a Conversation
+          </h2>
+
+          <p class="section-description">
+            Have a project or question?
+            Send me a message.
+          </p>
+
+        </div>
+
+
+        <div class="contact-grid">
+
+
+          <div class="contact-info">
+
+
+            <div class="contact-box">
+
+              <span>
+                Email
+              </span>
+
+              <strong>
+                awaiskhan10804@gmail.com
+              </strong>
+
+            </div>
+
+
+            <div class="contact-box">
+
+              <span>
+                WhatsApp
+              </span>
+
+              <strong>
+                03706519165
+              </strong>
+
+            </div>
+
+
+            <div class="contact-box">
+
+              <span>
+                Services
+              </span>
+
+              <strong>
+                Web Development • Excel • MS Office
+              </strong>
+
+            </div>
+
+
+            <div class="contact-actions">
+
+              <a
+                href="mailto:awaiskhan10804@gmail.com"
+                class="btn btn-secondary"
+              >
+                Email Me
+              </a>
+
+              <a
+                href="https://wa.me/923706519165?text=Assalam-o-Alaikum%20Awais%2C%20I%20want%20to%20discuss%20a%20project."
+                class="btn whatsapp-btn"
+              >
+                WhatsApp
+              </a>
+
+            </div>
+
+
+          </div>
+
+
+          <!-- Netlify Form -->
+
+          <form
+            class="contact-form"
+            name="project-inquiry"
+            method="POST"
+            data-netlify="true"
+            data-netlify-honeypot="bot-field"
+            action="/"
+          >
+
+            <input
+              type="hidden"
+              name="form-name"
+              value="project-inquiry"
+            >
+
+            <p class="hidden-field">
+
+              <label>
+                Don't fill this out if you're human:
+
+                <input name="bot-field">
+
+              </label>
+
+            </p>
+
+
+            <div class="form-group">
+
+              <label for="name">
+                Your Name
+              </label>
+
+              <input
+                type="text"
+                id="name"
+               
